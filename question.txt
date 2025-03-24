@@ -1,0 +1,55 @@
+1. What is PostgreSQL?
+Answer: PostgreSQL is an open-source, powerful relational database management system. It supports SQL for querying and advanced features like JSON, full-text search, and indexing. It's known for its stability, extensibility.
+
+2. What is the purpose of a database schema in PostgreSQL?
+Answer: A schema in PostgreSQL is a logical grouping of database objects like tables, views, indexes, functions, etc. It helps in: Organizing the database. Isolating different applications using the same database. Managing permissions by restricting access to specific schemas.
+
+3. Explain the Primary Key and Foreign Key concepts in PostgreSQL.
+Answer: 
+                           Primary Key-
+ A column (or set of columns) that uniquely identifies each row in a table.
+                           Foreign Key- 
+A column that creates a relationship between two tables by referencing a primary key in another table.
+
+4. What is the difference between VARCHAR and CHAR data types?
+                       
+                       Storage Efficiency:
+VARCHAR: Uses only the required storage space.
+CHAR: Always uses exactly n bytes, even if the text is shorter.
+                       Trailing Spaces:
+VARCHAR: Stores the text as-is.
+CHAR: Automatically adds spaces to match the defined length.
+                       Performance Consideration:
+CHAR is slightly faster for fixed-length fields because of its consistent size.
+VARCHAR is more space-efficient when text length varies.
+
+5. Explain the purpose of the WHERE clause in a SELECT statement.
+Answer: The WHERE clause filters rows based on a condition.
+ example--(SELECT * FROM books WHERE price > 50;)
+Retrieves books only where price is greater than 50.
+Reduces the number of rows returned.
+
+6. What are the LIMIT and OFFSET clauses used for?
+Answer:              LIMIT- 
+Restricts the number of rows returned.
+                     OFFSET- 
+Skips a certain number of rows before returning results.
+
+7. How can you modify data using UPDATE statements?
+Answer: The "UPDATE" statement modifies existing records in a table.
+
+8. What is the significance of the JOIN operation, and how does it work in PostgreSQL?
+Answer: A JOIN combines data from multiple tables based on a related column.
+Types of JOINs: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN
+
+9. Explain the GROUP BY clause and its role in aggregation operations.
+Answer: "GROUP BY" groups rows with the same values and applies aggregate functions.
+
+10. How can you calculate aggregate functions like COUNT(), SUM(), and AVG() in PostgreSQL?
+Answer: COUNT(*) → Counts total rows.
+SUM(column_name) → Calculates total sum.
+AVG(column_name) → Computes average value.
+
+
+
+
