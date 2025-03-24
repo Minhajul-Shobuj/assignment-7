@@ -12,7 +12,7 @@ Answer:
 A column that creates a relationship between two tables by referencing a primary key in another table.
 
 4. What is the difference between VARCHAR and CHAR data types?
-                       
+Answer:                      
                        Storage Efficiency:
 VARCHAR: Uses only the required storage space.
 CHAR: Always uses exactly n bytes, even if the text is shorter.
